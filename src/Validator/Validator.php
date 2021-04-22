@@ -148,7 +148,7 @@ class Validator {
         if (!empty($containerNumber) && is_string($containerNumber)) {
             $matches = $this->identify( $containerNumber, true );
 
-            if (count($matches) !== 4 || isset($mathes[4])) {
+            if (count($matches) !== 4 || isset($matches[4])) {
                 $this->errorMessages[] = 'Invalid container number';
             } else {
                 $checkDigit = $this->buildCheckDigit($matches);
